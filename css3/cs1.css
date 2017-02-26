@@ -1,0 +1,82 @@
+.scroll-demo
+{
+	width: 540px;
+	border: 1px solid #e5e5e5;
+	background-color: #fff;
+	margin: 30px auto;
+}
+body
+{
+	background-color: #ccc;
+}
+/*biaoqianqiehuan*/
+.scroll-tab
+{
+	height: 34px;
+	border-bottom: 1px solid #e5e5e5;
+	color: #666;
+	background-color: #f8f8f8;
+}
+.scroll-tab li
+{
+	list-style-type: none;
+}
+.scroll-tab .tab-item
+{
+	float: left;
+	font: 14px/34px "Microsoft YaHei"
+	height34px;
+	text-align: center;
+	border-right: 1px solid #e5e5e5;
+	padding:  0 20px;
+}
+.scroll-tab .tab-active
+{
+	color: #00be3c;
+	background-color: #fff;
+	border-top: 2px solid #00be3c;
+	margin: ;
+}
+.scroll-wrap
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+.scroll-wrap .scroll-cont
+{
+	height: 100%;
+	padding: 0 15px;
+	overflow: hidden;
+}
+.scroll-wrap .scroll-cont h3
+{
+	font-style: 16px/3 "Microsoft YaHei";
+	text-align: center;
+}
+.scroll-wrap .scroll-cont p
+{
+	font-size: 14px;
+	line-height: 20px;
+	text-indent: 2em;
+	margin-bottom: 10px;
+}
+/*gundongtiao*/
+.scroll-wrap .scroll-bar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background-color: #eaeaea;
+}
+.scroll-wrap .scroll-slider
+{
+	position: absolute;
+	top: 0;
+	left: 1px;
+	height: 30px;
+	width: 8px;
+	background-color: #fff;
+}
