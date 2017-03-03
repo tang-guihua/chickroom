@@ -21,8 +21,11 @@ body
 }
 .tiankong
 {
+	position: absolute;
 	width: 100%;
 	height: 100vh;
+	top: 0;
+	left: 0;
 	overflow: hidden;
 }
 /*top*/
@@ -32,7 +35,7 @@ body
 	top: 0;
 	width: 100%;
 	padding: 1.5em;
-	z-index: 10;
+	z-index: 6;
 }
 .biaotou:after
 {
@@ -101,16 +104,19 @@ li.name a
 /*主页面*/
 .main
 {
+	position: absolute;
+	top: 0;
+    left: 0;
 	width: 100%;
 	height: 100vh;
 	background-image: url('../link/star-Recovered.png');
 	background-position: center;
+	transition: 2s transform ease-in-out;
+	z-index: 5;
 }
 .main.hide
 {
-	position: relative;
 	transform: translateY(-1000px);
-	transition: all 1s ease-in-out;
 }
 /*star*/
 .all-star
@@ -229,9 +235,8 @@ li.name a
 /*总内容*/
 .zong
 {
-	display: none;
-	width: 100%;
-	height: 100vh;
+	position: relative;
+	z-index: 4;
 }
 /*侧边栏*/
 .sidebar
@@ -240,7 +245,140 @@ li.name a
 	width: 260px;
 	top: 0;
 	bottom: 0;
+	background: -moz-linear-gradient(left, #013e66 , #040000 80%);
 }
+.sidebar .list
+{
+	position: relative;
+	top: 120px;
+	width: 100%;
+	height: 100%;
+}
+.sidebar .list .nano
+{
+	padding: 1em 2em 1em 4em;
+	height: 100%;
+}
+.nano li
+{
+	list-style-type: none;
+	color: #162040;
+}
+.nano li .number
+{
+	font-size: 3em;
+
+}
+.nano li .link
+{
+	font-size: 1em;
+	color: #dcdcdc;
+}
+.nano li .link2
+{
+	font-size: .8em;
+	color: #dcdcdc;
+	position: relative;
+	top: 1em;
+	left: -1em;
+}
+.nano li .link2
+{
+	font-size: .8em;
+	color: #dcdcdc;
+	position: relative;
+	top: 1em;
+	left: -1em;
+}
+/*内页页面*/
+.yemian
+{
+	width: 100%;
+	height: 100%;
+	margin-left: 260px;
+}
+.yemian .sunlive
+{
+	height: 100%;
+	position: relative;
+	padding: 2em;
+}
+.yemian .sunlive .no1
+{
+	width: 100%;
+	height: 100vh;
+}
+.yemian .sunlive .no1 h2
+{
+	font-size: 2.8em;
+	color: #ee7419;
+	font-weight: 100;
+	line-height: 1.4em;
+	letter-spacing: .1em;
+}
+.yemian .sunlive .no1 h6
+{
+	font-size: .9em;
+	color: #a2a2a2;
+	font-weight: 100;
+	text-align: left;
+	line-height: 1.5em;
+	padding-bottom: 2em; 
+}
+.yemian .sunlive .no1 span
+{
+	font-size: .9em;
+	color: #a2a2a2;
+	font-weight: 100;
+	display: inline-block;
+	padding: 0em 2em 0 0;
+	width: 550px;
+}
+.yemian .sunlive .no1 .sunimg1
+{
+	float: right;
+}
+/*内页
+.yemian .suntext
+{
+	position: relative;
+	top: 50px;
+	left: 30px;
+	width: 40%;
+}
+.yemian .sunlive .sunimg1
+{
+	float: right;
+	position: relative;
+	top: -100px;
+}
+/*内页
+.yemian .sunlive .no2
+{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.no2 .suntext2
+{
+	padding: 1em 0 2em 4em;
+}
+.no2 .sunimg2
+{
+	width: 60%;
+	height: 100vh;
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+}
+.no2 img
+{
+	padding: 3em; 
+}
+.no2 .suntext2
+{
+
+}*/
 /*媒体查询*/
 @media screen and (max-width: 1380px)
 {
