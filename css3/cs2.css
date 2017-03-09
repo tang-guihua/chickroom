@@ -17,6 +17,10 @@ body
 	overflow: hidden;
 	font-family: "mircrosoftYaHei";
 }
+b
+{
+	color: white;
+}
 .wrap
 {
 	overflow-x: hidden;
@@ -62,13 +66,13 @@ body
 {
 	display: inline-block;
 	text-align: center;
-	border-bottom: 1px solid #b15521;
+	border-bottom: 1px solid #FF6400;
 	transition: all 1s ease;
 }
 .right ul li a
 {
 	text-decoration: none;
-	font-size: .9em;
+	font-size: 1em;
 	cursor: pointer;
 }
 .right ul li:first-child
@@ -90,13 +94,13 @@ body
 /*top text*/
 li.design a
 {
-	color: #b15521;
+	color: #FF6400;
 	font-family: "arial";
 	font-weight: 100;
 }
 li.name a
 {
-	color: #b15521;
+	color: #FF6400;
 	font-weight: 100;
 	letter-spacing: .3em;
 }
@@ -181,11 +185,12 @@ li.name a
 }
 .other img:hover
 {
-	transform: scale(1.3, 1.3);
+	transform: scale(1.05, 1.05);
 	position: relative;
 	z-index: 5;
 	cursor: pointer;
 }
+
 /*闪烁的星星*/
 .shine
 {
@@ -256,7 +261,7 @@ li.name a
 .sidebar .list
 {
 	position: relative;
-	top: 80px;
+	top: 20px;
 	width: 100%;
 	height: 100%;
 }
@@ -278,12 +283,12 @@ li.name a
 .nano li .link
 {
 	font-size: 1em;
-	color: #dcdcdc;
+	color: #7a7a7a;
 }
 .nano li .link2
 {
 	font-size: .8em;
-	color: #dcdcdc;
+	color: #7a7a7a;
 	position: relative;
 	top: 1em;
 	left: -1em;
@@ -291,7 +296,7 @@ li.name a
 .nano li .link2
 {
 	font-size: .8em;
-	color: #dcdcdc;
+	color: #7a7a7a;
 	position: relative;
 	top: 1em;
 	left: -1em;
@@ -307,154 +312,325 @@ li.name a
 .yemian .sunlive
 {
 	transition: .3s all ease-in-out;
-	padding-top: 113px;
+	padding-top: 61px;
 	width: 100%;
 	height: 100vh;
 }
-.content
+.yemian .content
 {
 	width: 100%;
-	height: calc(100vh - 113px);
+	height: calc(100vh - 61px);
 	overflow: auto;
-}
-.yemian .sunlive .no1
-{
-	width: 100%;
-}
-.yemian h2
-{
-	font-size: 2.8em;
-	color: #ee7419;
-	font-weight: 100;
-	line-height: 1.4em;
-	letter-spacing: .1em;
-}
-.yemian .sunlive .no1 h6
-{
-	font-size: .9em;
-	color: #a2a2a2;
-	font-weight: 100;
-	text-align: left;
-	line-height: 1.8em;
-	padding-bottom: 2em; 
-}
-.yemian .sunlive .no1 span
-{
-	font-size: 1.3em;
-	color: #525252;
-	font-weight: 100;
-	display: inline-block;
-	padding: 0em 2em 0 0;
-	width: 500px;
-}
-.yemian .sunlive .no1 .sunimg1
-{
-	
-}
-.yemian .sunlive .no1 img
-{
+	background: radial-gradient(at top, rgba(0,0,0,.2), transparent 70%) no-repeat;
+	background-size: 100% 15px;
 	position: relative;
-	top: -50px;
+	z-index: 10;
 }
-/*内页*/
-.yemian .suntext
+.yemian .content h1
 {
-	padding-left: 183em;
-	transition: all 1s ease-in-out;
-
+	font-size: 3.4em;
+	color: #7a7a7a;
+	line-height: 1em;
 }
-.yemian .suntext.show
+.yemian .content h4
 {
-	padding-left: 3em; 
+	font-size: 2.1em;
+	color: #FF6400;
+	margin-bottom: 0.3em;
+	letter-spacing: .05em;
 }
-.yemian .sunlive .sunimg1
+/*竖线*/
+.yemian .content .shuxian
 {
+	width: 1px;
+	height: 40px;
+	background-color: #aaa;
+	margin: 2em 0 2em 12em;
 }
-.yemian .sunlive img
+.yemian .content .jiantou
+{
+	text-align: center;
+}
+.yemian .content .jiantou img
+{
+	margin: auto;
+}
+.yemian .content span
+{
+	font-size: 1em;
+	color: #7a7a7a;
+}
+.yemian .content>div
+{
+	transform: translateX(70px);
+}
+.yemian .content .no1
 {
 	width: 100%;
-	padding-left: 300px;
+	height: auto;
 }
-.yemian .sunimg2 img:last-child
+.yemian .content .suntext
+{
+	width: 100%;
+	height: 100vh;
+	background-image: url("../link/sun-use.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 50%;
+	margin-bottom: 1em;
+	transform: translateX(1800px);
+	transition: all 1s ease-in-out;
+}
+.yemian .content .suntext.show
+{
+	transform: translateX(0);
+}
+.yemian .content .suntext span
+{
+	width: 50%;
+	margin-bottom: 2em;
+	display: block;
+	line-height: 1.8em;
+}
+.yemian .content .no2
+{
+	width: 100%;
+	height: 100vh;
+	display: block;
+}
+.yemian .content .no2 img
 {
 	width: 80%;
 }
-.zong .no1 img[src*=huan]
+.yemian .content .no2 .bijiao
+{
+	width: 50%;
+	float: left;
+}
+.yemian .content .no2 .bijiao:last-child
+{
+	width: 50%;
+	float: right;
+	padding-right: 4em;
+}
+.yemian .content .no2 .bijiaoText
+{
+	position: relative;
+	transform: translateY(40%);
+	padding-left: 4em;
+}
+.yemian .content .no2 .bijiaoText span
+{
+	line-height: 2em;
+	color: #ff6400;
+}
+/*水星*/
+.yemian .content .star1
+{
+	width: 100%;
+	height: 100vh;
+	background-image: url("../link/shuiXing.png");
+	background-position: 90% 100%;
+	background-repeat: no-repeat;
+	background-size: 40%;
+}
+.yemian .content .star1 .shuiXinText
+{
+	width: 50%;
+}
+.yemian .content .shuiXinText .center
+{
+	text-align: center;
+}
+.yemian .content .shuiXinText .center span
+{
+	line-height: 2em;
+	color: #fa6400;
+}
+.yemian .content .shuiXinText .center .shuxian
+{
+	margin: 3em auto;
+}
+.yemian .content .star1 .img
+{
+	float: right;
+	width: 50%;
+}
+/*金星*/
+.yemian .content .star2
+{
+	width: 100%;
+	background-image: url("../link/jinxing.jpg");
+	background-repeat: no-repeat;
+	background-position: 80% 80%;
+}
+.yemian .content .star2 .jinxingText
+{
+	width: 60%;	
+}
+.yemian .content .star2 .inner
+{
+	text-align: center;
+	padding: 0;
+	position: relative;
+}
+.yemian .content2
+{
+	position: relative;
+}
+.yemian .content2>span
 {
 	position: absolute;
-	width: 50%;
-	left: -400px;
-	top: 40%;
+	left: 10%;
+	top: 45%;
 }
-/*内页*/
-.yemian .sunlive .no2
+.yemian .content2 .inner .shuxian
+{
+	margin: 5em auto;
+}
+.yemian .content2 .inner span
+{
+	line-height: 2em;
+	color: #fa6400;
+}
+.yemian .content .earth
 {
 	width: 100%;
-	border-bottom: 1px dashed #ccc;
+	height: 100vh;
+	background-image: url("../link/earth-neiye.jpg");
+	background-repeat: no-repeat;
+	background-position: right 120px;
+	background-size: cover;
 }
-.no2 .suntext2
+.yemian .content .earth .leftleave
 {
-	padding: 1em 0 0em 3em;
+	line-height: 5em;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	transform: translateX(8em);
 }
-.no2 h6
+.yemian .content .star4
 {
-	font-size: 1.3em;
-	font-family: "mircrosoft YaHei";
-	line-height: 1.3em;
-	letter-spacing: .4em;
-	color: #525252;
+	padding-top: 3em;
+	width: 100%;
+	height: 100%;
 }
-.no2 .sunimg2
+.yemian .content .star4 div.text
 {
-	width: 80%;
+	width: 50%;
+	display: block;
+	float: left;
+}
+.yemian .content .star4 div.text .text2
+{
+	position: relative;
+}
+.yemian .content .star4 div.text .text2 .shuxian
+{
+	margin: 2em auto;
+}
+.yemian .content .star4 div.text .text2>span
+{
+	position: absolute;
+	top: 60%;
+}
+.yemian .content .star4 .img
+{
+	float: left;
+}
+/*清除浮动*/
+.clear
+{
+	clear: both;
+}
+/*木星*/
+.yemian .content .star5
+{
+	width: 100%;
+	height: 100%;
+}
+.yemian .content .star5 .content1
+{
+	display: block;
+	width: 100%;
+	height: 70%;
+}
+.yemian .content .star5 .inner
+{
+	width: 50%;
+	float: left;
+}
+.yemian .content .star5 .inner .shu
+{
+	text-align: center;
+}
+.yemian .content .star5 .img
+{
+	width: 50%;
+	float: left;
+	padding-top: 3em;
+}
+.yemian .content .star5 .img img
+{
+	width: 60%;
+}
+.yemian .content .star5 .inner .shuxian
+{
+	margin: 2em auto;
+}
+.yemian .content .star6
+{
+	width: 100%;
+	height: 100vh;
+}
+.yemian .content .star6 .tuXingText
+{
+	position: relative;
+}
+.yemian .content .star6 .tuXingText .img
+{
+	background-color: rgb(41,36,55);
+	position: relative;
+	top: 1em;
+	text-align: center;
+}
+.yemian .content .star6 .tuXingText img
+{
+	padding: 1em;
+}
+.yemian .content .star6 .tuXingText .img span
+{
+	position: absolute;
+	position: absolute;
+	top: 50%;
+	left: 3%;
+}
+.yemian .content .star7
+{
+	width: 100%;
 	height: auto;
-	padding-bottom: 5em;
-}
-.no2 span
-{
-	color: #ee7419;
-}
-.no2 img
-{
-	padding: .1em; 
-}
-.shuiXinText
-{
-	padding: 3em 0 0 3em;
-	width: 50%;
-	z-index: 2;
+	margin-top: 3em;
 	position: relative;
 }
-.shuiXinText h6
-{
-	color: #ee7419;
-	font-size: .8em;
-	line-height: 1.4em;
-	padding-top: 1.3em;
-}
-.shuiXinText p
-{
-	font-size: .9em;
-}
-.no3
-{
-	padding-bottom: -10em;
-}
-.no2 .shuojin
+.yemian .content .star7 .qiYuText
 {
 	width: 50%;
+	display: block;
 }
-.shuXing 
+.yemian .content .star7 .img
 {
-	position: relative;
-	top: -400px;
-	z-index: 1;
+	width: 460px;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
-.shuXing img
+.bottom
 {
+
 }
 /*媒体查询*/
-@media screen and (max-width: 1380px)
+@media screen and (max-width: 1280px)
 {
 	.sun
 	{
