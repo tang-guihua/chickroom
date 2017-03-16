@@ -10,12 +10,12 @@ html
 }
 body
 {
-	width: 100%;
-	position: relative;
 	font-size: 100%;
 	line-height: 1.5;
 	overflow: hidden;
 	font-family: "mircrosoftYaHei";
+	width: 100%;
+	position: relative;
 }
 b
 {
@@ -34,11 +34,10 @@ b
 /*top*/
 .biaotou
 {
-	position: fixed;
 	top: 0;
-	width: 100%;
 	padding: 1.5em;
 	z-index: 6;
+	width: calc(100% - 5em);;
 }
 .biaotou:after
 {
@@ -48,8 +47,8 @@ b
 }
 .right
 {
-	float: right;
 	color: white;
+	float: right;
 }
 .right ul
 {
@@ -172,7 +171,7 @@ li.name a
 .main .maintext
 {
 	position: absolute;
-	color: #d3d3d3;
+	color: #a3d3d3;
 	top: 25%;
 	left: 50%;
 	transform: translateX(-50%);
@@ -245,14 +244,14 @@ li.name a
 /*侧边栏*/
 .sidebar
 {
-	position: fixed;
-	width: 260px;
 	transform: translateX(-500px);
 	transition: all .7s ease-in-out;
-	transition-delay: .3s;
-	top: 0;
+	background: -webkit-linear-gradient(left, #013e66 , #040000 80%);
 	bottom: 0;
-	background: -moz-linear-gradient(left, #013e66 , #040000 80%);
+	top: 0;
+	transition-delay: .3s;
+	position: fixed;
+	width: 260px;
 }
 .sidebar.show
 {
@@ -328,13 +327,13 @@ li.name a
 }
 .yemian .content h1
 {
-	font-size: 3.4em;
+	font-size: 2.3em;
 	color: #7a7a7a;
-	line-height: 1em;
+	line-height: 1.5em;
 }
 .yemian .content h4
 {
-	font-size: 2.1em;
+	font-size: 1.1em;
 	color: #FF6400;
 	margin-bottom: 0.3em;
 	letter-spacing: .05em;
@@ -362,17 +361,15 @@ li.name a
 }
 .yemian .content>div
 {
-	transform: translateX(70px);
 }
 .yemian .content .no1
 {
-	width: 100%;
 	height: auto;
+	width: 100%;
 }
 .yemian .content .suntext
 {
 	width: 100%;
-	height: 100vh;
 	background-image: url("../link/sun-use.png");
 	background-repeat: no-repeat;
 	background-position: right top;

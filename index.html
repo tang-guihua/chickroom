@@ -3,7 +3,7 @@
 	<html>
 		<head>
 			<meta charset="utf-8">
-			<link type="text/css" rel="stylesheet" href="css3/cs2.css"/>
+			<link type="text/css" rel="stylesheet" href="css3/css1.css"/>
 			<link rel="stylesheet" type="text/css" href="css3/cssrest.css">
 			<script type="text/javascript" src="javascript/jquery.js"></script>
 			<script type="text/javascript" src="javascript/a.js"></script>
@@ -23,15 +23,16 @@
 						<div class="all-star">
 							<div class="sun"><img src="link/sunS.png" alt=""></div>
 							<div class="other">
-								<div class="shuixing"><img src="link/shuixin.png" alt=""></div>
-								<div class="jingxing"><img src="link/jingxin.png" alt=""></div>
-								<div class="earth"><img src="link/earth.png" alt=""></div>
-								<div class="huoxing"><img src="link/huoxing.png" alt=""></div>
-								<div class="tuxing"><img src="link/tuxin.png" alt=""></div>
-								<div class="muxing"><img src="link/muxing.png" alt=""></div>
-								<div class="tianwangxing"><img src="link/tianwangxing.png" alt=""></div>
-								<div class="hangwangxing"><img src="link/haiwangxing.png" alt=""></div>
+								<div class="shuixing">水星<img src="link/shuixin.png" alt=""></div>
+								<div class="jingxing">金星<img src="link/jingxin.png" alt=""></div>
+								<div class="earth">地球<img src="link/earth.png" alt=""></div>
+								<div class="huoxing">火星<img src="link/huoxing.png" alt=""></div>
+								<div class="tuxing">土星<img src="link/tuxin.png" alt=""></div>
+								<div class="muxing">木星<img src="link/muxing.png" alt=""></div>
+								<div class="tianwangxing">天王星<img src="link/tianwangxing.png" alt=""></div>
+								<div class="hangwangxing">海王星<img src="link/haiwangxing.png" alt=""></div>
 							</div>
+							<div class="clear"></div>
 						</div>
 						<div class="maintext"><span>驻梦太空</span></div>
 						<div class="shine">
@@ -47,42 +48,42 @@
 							<div class="nano hasscrollbar">
 								<li class="item" data-event = "1">
 									<span class="number">1</span>
-									<span class="link">太阳</span>
+									<span class="link"><a href="#sun">太阳</a></span>
 									<span class="link2">sun</span>
 								</li>
 								<li class="item">
 									<span class="number">2</span>
-									<span class="link">水星</span>
+									<span class="link"><a href="#shui">水星</a></span>
 									<span class="link2">mercury</span>
 								</li>
 								<li class="item">
 									<span class="number">3</span>
-									<span class="link">金星</span>
+									<span class="link"><a href="#jin">金星</a></span>
 									<span class="link2">venus</span>
 								</li>
 								<li class="item">
 									<span class="number">4</span>
-									<span class="link">地球</span>
+									<span class="link"><a href="#ear">地球</a></span>
 									<span class="link2">earth</span>
 								</li>
 								<li class="item">
 									<span class="number">5</span>
-									<span class="link">火星</span>
+									<span class="link"><a href="#huo">火星</a></span>
 									<span class="link2">mars</span>
 								</li>
 								<li class="item">
 									<span class="number">6</span>
-									<span class="link">土星</span>
+									<span class="link"><a href="#tu">土星</a></span>
 									<span class="link2">saturn</span>
 								</li>
 								<li class="item">
 									<span class="number">7</span>
-									<span class="link">木星</span>
+									<span class="link"><a href="#mu">木星</a></span>
 									<span class="link2">jupiter</span>
 								</li>
 								<li class="item">
 									<span class="number">8</span>
-									<span class="link">天王星</span>
+									<span class="link"><a href="#tian">天王星</a></span>
 									<span class="link2">uranus</span>
 								</li>
 							</div>
@@ -92,7 +93,7 @@
 						<div class="sunlive show">
 						<div class="content">
 						<!-- 太阳页面 -->
-						<div class="no1">
+						<div id="sun" class="no1">
 							<div class="suntext">
 								<h1>太阳</h1>
 								<h4>太阳系的中心天体</h4>
@@ -116,29 +117,29 @@
 								<img src="link/bijiao-2.png" alt="">
 							</div>
 							<div class="bijiaoText">
-								<span>太阳质量约为地球质量的33万倍太阳<br>直径约为地球直径的109倍</span>
+								<span>太阳质量约为地球质量的33万倍太阳</span><br><span>直径约为地球直径的109倍</span>
 							</div>
 							<div class="bijiao">		
 									<img src="link/bijiao-3.png" alt="">
 							</div>
-						</div>
 						<!-- 箭头 -->
 						<div class="jiantou">
 							<img src="link/jiantou.jpg" alt="">
 						</div>
+						</div>
 						<!-- 水星 -->
-						<div class="star1">
+						<div id="shui" class="star1">
 							<div class="shuiXinText">
 								<h1>水星</h1>
 								<h4>离太阳最近的行星</h4>
 								<span>是太阳系八大行星最内侧也是最小的一颗行星，<br>也是离太阳最近的行星。</span>
 								<div class="center">
 								<div class="shuxian"></div>
-								<span>离太阳距离最近<br></span>
-								<span>轨道速度最快<br></span>
-								<span>表面温差最大<br></span>
-								<span>卫星最少<br></span>
-								<span>时间最快<br></span>
+								<span class="aabb">离太阳距离最近<br></span><p class="abab">水星和太阳的平均距离为5790万公里，约为日地距离的0.387倍（0.387天文单位），比其它太阳系的行星近，到目前为止还没有发现过比水星更近太阳的行星。</p>
+								<span class="aabb">轨道速度最快</span><p class="shuoMing-b">因为距离最近，所以受到太阳的引力也最大，因此在它的轨道上比任何行星都跑得快，轨道速度为每秒48公里，比地球的轨道速度快18公里。这样快的速度，只用15分钟就能环绕地球一周。</p>
+								<span id="shuMing-3">表面温差最大</span><p class="shuoMing-c">因为没有大气的调节，距离太阳又非常近，所以在太阳的烘烤下，向阳面的温度最高时可达430℃，但背阳面的夜间温度可降到零下160℃，昼夜温差近600℃，夺得行星表面温差最大的冠军，这真是一个处于火和冰之间的世界。</p>
+								<span id="shuMing-4">卫星最少</span><p class="shuoMing-d">太阳系中发现了越来越多的卫星，总数超过60个，但水星和金星是根本没有卫星的行星。</p>
+								<span id="shuMing-5">时间最快</span><p class="shuoMing-e">水星年<br>地球每一年绕太阳公转一圈，而"水星年"是太阳系中最短的年，它绕太阳公转一周只用88天，还不到地球上的3个月。这都是因为水星围绕太阳高速飞奔的缘故，难怪代表水星的标记和符号是根据希腊神话，把它比作脚穿飞鞋手持魔杖的使者。<br>水星日<br>在太阳系的行星中，“水星年”时间最短，但水星'日'却比别的行星更长，水星公转一周是88天（以地球日为单位）而水星自转一周是58.646天（地球日）,地球每自转一周就是一昼夜，而水星自转三周才是一昼夜。水星上一昼夜的时间，相当于地球上的176天。与此同时，水星也正好公转了两周。因此人们说水星上的一天等于两年，地球人到了水星上多么不习惯。</p>
 								<div class="shuxian"></div>
 								</div>
 							</div>
@@ -148,11 +149,11 @@
 							<img src="link/jiantou.jpg" alt="">
 						</div>
 						<!-- 金星 -->
-						<div class="star2">
+						<div id="jin" class="star2">
 							<div class="jinxingText">
 								<h1>金星</h1>
 								<h4>离地球最近的行星</h4>
-								<span>它清晨出现在东方天空，被称为“启明”；
+								<span>它清晨出现在东方天空，被称为“启明”；<br>
 								傍晚处于天空的西侧，被称为“长庚”。</span>
 								<div class="content2">
 								<span>金星探测器</span>
@@ -169,7 +170,7 @@
 							<img src="link/jiantou.jpg" alt="">
 						</div>
 						<!-- 地球 -->
-						<div class="earth">
+						<div id="ear" class="earth">
 							<div class="star3">
 								<h1>地球</h1>
 								<h4>目前宇宙中已知存在生命的唯一的天体</h4>
@@ -184,7 +185,7 @@
 							<img src="link/jiantou.jpg" alt="">
 						</div>
 						<!-- 火星 -->
-						<div class="star4 ">
+						<div id="huo" class="star4 ">
 							<div class="huoxingText">
 								<h1>火星</h1>
 								<h4>是太阳系由内往外数的第四颗行星</h4>
@@ -205,7 +206,7 @@
 							</div>
 						</div>
 						<!-- 木星 -->
-						<div class="star5">
+						<div id="mu" class="star5">
 							<div class="muxingText">
 								<h1>木星</h1>
 								<h4>是太阳系八大行星中体积最大、自转最快的行星</h4>
@@ -228,7 +229,7 @@
 							<img src="link/jiantou.jpg" alt="">
 						</div>
 						<!-- 土星 -->
-						<div class="star6">
+						<div id="tu" class="star6">
 							<div class="tuXingText">
 								<h1>土星</h1>
 								<h4>至太阳距离位于第六，体积则仅次于木星。</h4>
@@ -242,7 +243,7 @@
 							<img src="link/jiantou.jpg" alt="">
 						</div>
 						<!-- 其余 -->
-						<div class="star7">
+						<div id="tian" class="star7">
 							<div class="qiYuText">
 								<h1>天王星</h1>
 								<h4>是太阳系内大气层最冷的行星</h4>
